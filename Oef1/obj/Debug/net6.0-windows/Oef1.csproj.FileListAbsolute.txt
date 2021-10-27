@@ -1,5 +1,4 @@
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.csproj.AssemblyReference.cache
-C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.Form1.resources
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.csproj.GenerateResource.cache
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.AssemblyInfoInputs.cache
@@ -15,3 +14,4 @@ C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoi
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\ref\Oef1.dll
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.pdb
 C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.genruntimeconfig.cache
+C:\Users\antoi\source\repos\hoofdstuk5 delegates & events\Opdracht 4 Couck Antoine\Oef1\Oef1\obj\Debug\net6.0-windows\Oef1.Task_manager.resources

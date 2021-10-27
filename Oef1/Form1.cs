@@ -21,7 +21,7 @@ namespace Oef1
         private List<System.Timers.Timer> Timerlist = new List<System.Timers.Timer>();
         private Rij<TeDoen> rij = new Rij<TeDoen>();
         private List<TeDoen> rememberObjects = new List<TeDoen>();
-        private List<DateTime> lijstDates = new List<DateTime>();
+        private List<DateTime> lijstDatum = new List<DateTime>();
 
         public int Wacht()
         {
@@ -41,7 +41,7 @@ namespace Oef1
                 {
 
                     rememberObjects.Add(new TeDoen(inputDate.Value, inputTitle.Text, textBox1.Lines));
-                    lijstDates.Add(inputDate.Value);
+                    lijstDatum.Add(inputDate.Value);
                     StartTimer();
                     inputTitle.Text = null;
                     textBox1.Text = null;
@@ -76,14 +76,14 @@ namespace Oef1
 
         private void label5_Tick(object sender, EventArgs e)
         {
-            foreach (DateTime date in lijstDates)
+            foreach (DateTime date in lijstDatum)
             {
                 if (date <= DateTime.Now)
                 {
-                    rij.WhenShow(rememberObjects[lijstDates.IndexOf(date)]);
+                    rij.WhenShow(rememberObjects[lijstDatum.IndexOf(date)]);
 
-                    rememberObjects.RemoveAt(lijstDates.IndexOf(date));
-                    lijstDates.RemoveAt(lijstDates.IndexOf(date));
+                    rememberObjects.RemoveAt(lijstDatum.IndexOf(date));
+                    lijstDatum.RemoveAt(lijstDatum.IndexOf(date));
 
                 }
 
