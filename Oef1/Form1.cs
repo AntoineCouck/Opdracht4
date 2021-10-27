@@ -18,12 +18,12 @@ namespace Oef1
             inputDate.Visible = false;
         }
 
-        private Rij<TeDoen> rij = new Rij<TeDoen>();
         private List<System.Timers.Timer> Timerlist = new List<System.Timers.Timer>();
-        private List<DateTime> lijstDates = new List<DateTime>();
+        private Rij<TeDoen> rij = new Rij<TeDoen>();
         private List<TeDoen> rememberObjects = new List<TeDoen>();
+        private List<DateTime> lijstDates = new List<DateTime>();
 
-        public int Wachtijd()
+        public int Wacht()
         {
             TimeSpan wachttijd = inputDate.Value - DateTime.Now;
             System.Threading.Thread.Sleep((int)wachttijd.TotalMinutes);
@@ -42,7 +42,7 @@ namespace Oef1
 
                     rememberObjects.Add(new TeDoen(inputDate.Value, inputTitle.Text, textBox1.Lines));
                     lijstDates.Add(inputDate.Value);
-                    InitTimer();
+                    StartTimer();
                     inputTitle.Text = null;
                     textBox1.Text = null;
 
@@ -65,9 +65,9 @@ namespace Oef1
 
         }
 
-        public void InitTimer()
+        public void StartTimer()
         {
-            System.Timers.Timer Localtimer = new System.Timers.Timer(Wachtijd());
+            System.Timers.Timer Localtimer = new System.Timers.Timer(Wacht());
             Localtimer.Elapsed += label5_Tick;
             Localtimer.AutoReset = false;
             Localtimer.Start();

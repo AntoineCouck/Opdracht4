@@ -7,8 +7,8 @@ namespace Oef1
     internal class Rij<T>
     {
         private List<T> rij = new List<T>();
-        private List<T> rijCopy = new List<T>();
-        private static int counter;
+        private List<T> rijcopie = new List<T>();
+        private static int teller;
         public event Tonen tonen;
 
      
@@ -34,8 +34,8 @@ namespace Oef1
 
         public void Toon()
         {
-            counter++;
-            WhenShow(rij[counter - 1]);
+            teller++;
+            WhenShow(rij[teller - 1]);
             
         }
 
@@ -69,9 +69,9 @@ namespace Oef1
 
         public List<T> lijstCopy()
         {
-            rijCopy = rij.GetRange(0, rij.Count);
+            rijcopie = rij.GetRange(0, rij.Count);
 
-            return rijCopy;
+            return rijcopie;
 
         }
 
@@ -82,10 +82,10 @@ namespace Oef1
                 throw new Exception();
             }
 
-            T element = rij[counter - 1];
-            rij.RemoveAt(counter - 1);
+            T element = rij[teller - 1];
+            rij.RemoveAt(teller - 1);
             rij.Add(element);
-            counter--;
+            teller--;
 
             WhenShow(element);
         }
