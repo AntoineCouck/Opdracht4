@@ -18,9 +18,9 @@ namespace Oef1
             inputDate.Visible = false;
         }
 
-        private List<System.Timers.Timer> Timerlist = new List<System.Timers.Timer>();
+        private List<System.Timers.Timer> LijstVanTimers = new List<System.Timers.Timer>();
         private Rij<TeDoen> rij = new Rij<TeDoen>();
-        private List<TeDoen> rememberObjects = new List<TeDoen>();
+        private List<TeDoen> lijstvanObjecten = new List<TeDoen>();
         private List<DateTime> lijstDatum = new List<DateTime>();
 
         public int Wacht()
@@ -40,7 +40,7 @@ namespace Oef1
                 if (inputDate.Value > DateTime.Now)
                 {
 
-                    rememberObjects.Add(new TeDoen(inputDate.Value, inputTitle.Text, textBox1.Lines));
+                    lijstvanObjecten.Add(new TeDoen(inputDate.Value, inputTitle.Text, textBox1.Lines));
                     lijstDatum.Add(inputDate.Value);
                     StartTimer();
                     inputTitle.Text = null;
@@ -71,7 +71,7 @@ namespace Oef1
             Localtimer.Elapsed += label5_Tick;
             Localtimer.AutoReset = false;
             Localtimer.Start();
-            Timerlist.Add(Localtimer);
+            LijstVanTimers.Add(Localtimer);
         }
 
         private void label5_Tick(object sender, EventArgs e)
@@ -80,9 +80,9 @@ namespace Oef1
             {
                 if (date <= DateTime.Now)
                 {
-                    rij.WhenShow(rememberObjects[lijstDatum.IndexOf(date)]);
+                    rij.WhenShow(lijstvanObjecten[lijstDatum.IndexOf(date)]);
 
-                    rememberObjects.RemoveAt(lijstDatum.IndexOf(date));
+                    lijstvanObjecten.RemoveAt(lijstDatum.IndexOf(date));
                     lijstDatum.RemoveAt(lijstDatum.IndexOf(date));
 
                 }
