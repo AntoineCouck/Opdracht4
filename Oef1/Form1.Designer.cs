@@ -1,6 +1,6 @@
 ﻿namespace Oef1
 {
-    partial class Form1
+    partial class Task_manager
     {
         /// <summary>
         ///  Required designer variable.
@@ -198,7 +198,7 @@
             this.label5.TabIndex = 15;
             this.label5.Click += new System.EventHandler(this.label5_Tick);
             // 
-            // Form1
+            // Task_manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,8 +219,8 @@
             this.Controls.Add(this.inputInhoud);
             this.Controls.Add(this.inputTitle);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Task_manager";
+            this.Text = "Task manager";
             this.ResumeLayout(false);
             this.PerformLayout();
 

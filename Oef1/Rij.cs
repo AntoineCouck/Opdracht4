@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using static Oef1.Form1;
+using static Oef1.Task_manager;
 
 namespace Oef1
 {

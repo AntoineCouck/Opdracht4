@@ -7,12 +7,12 @@ using System.Windows.Forms;
 
 namespace Oef1
 {
-    public partial class Form1 : Form
+    public partial class Task_manager : Form
     {
 
         public delegate void Tonen(object rij);
 
-        public Form1()
+        public Task_manager()
         {
             InitializeComponent();
             inputDate.Visible = false;
